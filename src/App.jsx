@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Home from './Home'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import React from 'react';
+import Navbar from './Navbar';
+import Banner from './Banner';
+import Footer from './Footer';
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    <Navbar/>
-     <Home/>
-     <Footer/>
-    </>
-  )
-}
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <Banner />
+      {/* Add other components and content here */}
+      <div className="flex-grow"></div>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
