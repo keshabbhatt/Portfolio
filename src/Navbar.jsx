@@ -22,10 +22,10 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} w-full lg:w-auto`}>
-          <a href="#home" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Home</a>
-          <a href="#project" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Project</a>
-          <a href="#about" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">About</a>
-          <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Contact</a>
+          <a href="/" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Home</a>
+          <a href="/project" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Project</a>
+          <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">About</a>
+          <a href="/contact" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Contact</a>
         </div>
       </div>
     </nav>
