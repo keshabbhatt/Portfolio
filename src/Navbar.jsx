@@ -4,35 +4,31 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <>
-   <div className="navbar bg-base-100 bg-gray-800">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-xl text-white">welcomegi</a>
-  </div>
-  <div className="flex-none gap-2">
-    <div className="form-control">
-      <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-    </div>
-    <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img alt="Tailwind CSS Navbar component" src="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-6/339268631_245187884631173_3849200606450914357_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CYnPCLMb2gQQ7kNvgFtaYzL&_nc_ht=scontent.fktm19-1.fna&oh=00_AYBuHaiJ9Xv4iaDYcOEijisQj5he9B3dxmbVlgmOn2xFoA&oe=6668D4AD" />
+    <nav className="bg-black text-white p-5">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-4xl font-bold">welcome</div>
+        <div className="lg:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="focus:outline-none"
+          >
+            <svg className="h-6 w-6 fill-current text-white" viewBox="0 0 24 24">
+              {isOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16v2H4V6zm0 6h16v2H4v-2zm0 6h16v2H4v-2z" />
+              )}
+            </svg>
+          </button>
+        </div>
+        <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} w-full lg:w-auto`}>
+          <a href="#home" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Home</a>
+          <a href="#project" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Project</a>
+          <a href="#about" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">About</a>
+          <a href="#contact" className="block mt-4 lg:inline-block lg:mt-0 hover:text-red-500 mx-4">Contact</a>
         </div>
       </div>
-      <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-   </>
+    </nav>
   );
 };
 

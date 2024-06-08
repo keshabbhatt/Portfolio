@@ -10,8 +10,8 @@ const Banner = () => {
       />
       <h1 className="text-5xl font-bold">Hello, its me Kunaal</h1>
       <h2 className="text-3xl font-semibold text-red-500">A computer engineering student</h2>
-      <p className="text-center mt-5 max-w-2xl">By focusing on a clean, intuitive design with easy navigation and comprehensive information, the system ensures users can easily access and utilize the content provided.</p>
-      <button className="bg-red-500 text-white py-2 px-5 mt-5 rounded hover:bg-red-700">ABOUT ME</button>
+      <p className="text-center mt-5 max-w-2xl"></p>
+      <button className="bg-red-500 text-white py-2 px-5 mt-5 rounded hover:bg-red-700">more about me</button>
     </section>
   );
 };
