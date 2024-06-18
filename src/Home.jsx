@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <section className="flex flex-col items-center p-10 bg-black text-white">
       <img
-        src="https://scontent.fktm19-1.fna.fbcdn.net/v/t39.30808-6/339268631_245187884631173_3849200606450914357_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=CYnPCLMb2gQQ7kNvgFtaYzL&_nc_ht=scontent.fktm19-1.fna&oh=00_AYBuHaiJ9Xv4iaDYcOEijisQj5he9B3dxmbVlgmOn2xFoA&oe=6668D4AD"
+        src="https://scontent.fktm1-1.fna.fbcdn.net/v/t39.30808-6/339268631_245187884631173_3849200606450914357_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dse7twThKCsQ7kNvgH3OUDV&_nc_ht=scontent.fktm1-1.fna&oh=00_AYArvscl2JAmexZKUk6obOQguxcmcFzGxQspgfSpYn3jqw&oe=6676E4AD"
         alt="Profile"
         className="rounded-full w-40 h-40 object-cover mb-5 border-4 border-red-500"
       />
