@@ -3,22 +3,22 @@ import { Icon } from "@iconify/react"; // Assuming you are using @iconify/react 
 
 const About = () => {
   // Sample skills data
-  const skills = ["UI/UX Design", "Backend Development", "Frontend Development", "Database Management", "Software Engineering"];
+  const skills = ["UI/UX Design", "Backend Development", "Frontend Development", "Database Management", "AI"];
 
   return (
-    <div>
+    <div className="bg-gradient-to-r from-blue-500 to-pink-500 min-h-screen">
       {/* Navbar */}
       <nav className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto">Navbar</div>
+        <div className="container mx-auto"></div>
       </nav>
 
       {/* Content */}
       <div className="container mx-auto py-8">
         {/* Introduction */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">About Me</h2>
+          <h2 className="text-2xl font-bold mb-4 text-red-700">About Me</h2>
           <p className="mb-4">
-            I am a Computer Engineering student at Far Western University, hailing from Jhalari. My academic journey is driven by a keen interest in UI/UX design, where I am passionate about creating intuitive and engaging user interfaces. Alongside this, I have a deep enthusiasm for backend development, where I focus on building robust and efficient systems. My education provides a strong foundation in both front-end and back-end technologies, allowing me to develop comprehensive and well-rounded software solutions. Through my studies and projects, I continually strive to enhance my skills and stay updated with the latest trends in the ever-evolving field of technology.
+            I am a passionate Computer Engineering student at Far Western University, with a strong foundation in UI/UX design, backend development, and frontend technologies. I enjoy crafting intuitive user interfaces and developing robust, efficient systems. My skills extend to database management and AI, enabling me to build comprehensive software solutions. With a dedication to continuous learning, I strive to stay updated with emerging trends and deliver impactful projects that bridge innovation and practicality.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const About = () => {
               <div key={index} className="w-1/2 md:w-1/4 p-2">
                 <div className="bg-gray-200 p-4 rounded-md flex flex-col items-center">
                   <Icon icon={`simple-icons:${skill.toLowerCase().replace("/", "-").replace(" ", "")}`} width="100" height="100" />
-                  <p className="text-center mt-2">{skill}</p>
+                  <p className="text-center mt-2 text-green-600">{skill}</p>
                 </div>
               </div>
             ))}
@@ -39,6 +39,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
 export default About;
